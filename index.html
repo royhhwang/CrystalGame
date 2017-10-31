@@ -83,7 +83,7 @@
         var wbValue = Math.floor(Math.random() * 4 + 3);
         console.log(wbValue);
 
-        var pbValue = Math.floor(Math.random() * 10 + 5);
+        var pbValue = Math.floor(Math.random() * 10 + 10);
         console.log(pbValue);
 
         var dbValue = Math.floor(Math.random() * 5 + 5);
@@ -99,11 +99,15 @@
                     userWin++;
                     alert("You win!");
                     $(".colWin").html("Win " + userWin);
+                    guessTotValue = 0;
+                    $("#user-guess").html(guessTotValue);
                 }
                 if (guessTotValue > compGuess) {
                     compWin++;
                     alert("You lose!");
                     $(".colLose").html("Lose " + compWin);
+                    guessTotValue = 0;
+                    $("#user-guess").html(guessTotValue);
                 }
             });
 
@@ -114,11 +118,15 @@
                     userWin++;
                     alert("You win!");
                     $(".colWin").html("Win " + userWin);
+                    guessTotValue = 0;
+                    $("#user-guess").html(guessTotValue);
                 }
                 if (guessTotValue > compGuess) {
                     compWin++;
                     alert("You lose!");
                     $(".colLose").html("Lose " + compWin);
+                    guessTotValue = 0;
+                    $("#user-guess").html(guessTotValue);
                 }
             });
 
@@ -129,11 +137,15 @@
                     userWin++;
                     alert("You win!");
                     $(".colWin").html("Win " + userWin);
+                    guessTotValue = 0;
+                    $("#user-guess").html(guessTotValue);
                 }
                 if (guessTotValue > compGuess) {
                     compWin++;
                     alert("You lose!");
                     $(".colLose").html("Lose " + compWin);
+                    guessTotValue = 0;
+                    $("#user-guess").html(guessTotValue);
                 }
             });
 
@@ -144,11 +156,15 @@
                     userWin++;
                     alert("You win!");
                     $(".colWin").html("Win " + userWin);
+                    guessTotValue = 0;
+                    $("#user-guess").html(guessTotValue);
                 }
                 if (guessTotValue > compGuess) {
                     compWin++;
                     alert("You lose!");
                     $(".colLose").html("Lose " + compWin);
+                    guessTotValue = 0;
+                    $("#user-guess").html(guessTotValue);
                 }
             });
             $(".colReset").click(function () {
